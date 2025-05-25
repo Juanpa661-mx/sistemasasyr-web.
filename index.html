@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Sistemas Asyr - Renta y venta de equipos de cómputo, infraestructura TI y más" />
+    <title>Sistemas Asyr</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+    <style>
+        /* Estilos básicos para mejorar presentación */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+        header {
+            background-color: #004080;
+            padding: 15px 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li {
+            margin: 0 25px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: color 0.3s ease;
+        }
+        nav ul li a:hover {
+            color: #ffc107;
+        }
+        section {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        h1, h2 {
+            color: #004080;
+            margin-bottom: 20px;
+        }
+        #inicio {
+            background: url('https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1350&q=80') no-repeat center center/cover;
+            color: white;
+            padding: 100px 20px;
+            text-align: center;
+            border-radius: 8px;
+            box-shadow: inset 0 0 0 2000px rgba(0, 64, 128, 0.6);
+        }
+        #inicio p {
+            font-size: 1.3rem;
+            max-width: 700px;
+            margin: 20px auto 0;
+        }
+        #servicios ul {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            padding: 0;
+            list-style: none;
+        }
+        #servicios li {
+            background-color: white;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 4px 12px rgb(0 0 0 / 0.1);
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        #servicios li img {
+            width: 40px;
+            height: 40px;
+        }
+        #nosotros p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        #contacto form {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgb(0 0 0 / 0.1);
+            max-width: 600px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        #contacto label {
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+        #contacto input, #contacto textarea {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1rem;
+            resize: vertical;
+        }
+        #contacto button {
+            background-color: #004080;
+            color: white;
+            border: none;
+            padding: 12px;
+            border-radius: 6px;
+            font-weight: 700;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        #contacto button:hover {
+            background-color: #002b5c;
+        }
+        footer {
+            text-align: center;
+            padding: 15px 10px;
+            background-color: #004080;
+            color: white;
+            font-size: 0.9rem;
+            margin-top: 60px;
+        }
+        /* Responsive */
+        @media(max-width: 600px) {
+            nav ul {
+                flex-direction: column;
+            }
+            nav ul li {
+                margin: 10px 0;
+            }
+            #servicios ul {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#nosotros">Sobre Nosotros</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="inicio">
+        <h1>Bienvenidos a Sistemas Asyr</h1>
+        <p>
+            Nos dedicamos a la renta y venta de equipos de cómputo de cualquier marca. 
+            La renta incluye soporte a los equipos, según el plan elegido.
+        </p>
+    </section>
+
+    <section id="servicios">
+        <h2>Servicios</h2>
+        <ul>
+            <li>
+                <img src="https://img.icons8.com/ios-filled/50/004080/laptop.png" alt="Equipos de cómputo" />
+                Renta y venta de equipos de cómputo
+            </li>
+            <li>
+                <img src="https://cdn-icons-png.flaticon.com/512/3064/3064197.png" alt="Soporte Técnico" />
+                Soporte técnico según plan de renta
+            </li>
+            <li>
+                <img src="https://img.icons8.com/ios-filled/50/004080/server.png" alt="Infraestructura TI" />
+                Infraestructura TI: cámaras, nodos de red, servidores, site, switches, access points, antenas de red
+            </li>
+            <li>
+                <img src="https://img.icons8.com/ios-filled/50/004080/code.png" alt="Páginas web" />
+                Creación de páginas web
+            </li>
+            <li>
+                <img src="https://img.icons8.com/ios-filled/50/004080/domain.png" alt="Dominios" />
+                Venta y administración de dominios y correo electrónico
+            </li>
+            <li>
+                <img src="https://img.icons8.com/ios-filled/50/004080/cloud.png" alt="Migración de datos" />
+                Migración de datos
+            </li>
+            <li>
+                <img src="https://img.icons8.com/ios-filled/50/004080/privacy.png" alt="Ciberseguridad" />
+                Ciberseguridad
+            </li>
+        </ul>
+    </section>
+
+    <section id="nosotros">
+        <h2>Sobre Nosotros</h2>
+        <p>
+            Sistemas Asyr es una empresa dedicada a proveer soluciones integrales de tecnología, 
+            con experiencia en renta, venta y soporte de equipos, así como en infraestructura TI y servicios digitales.
+        </p>
+        <div style="text-align:center; margin-top: 30px;">
+            <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1000&q=80" alt="Equipo de tecnología" style="max-width: 100%; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.2);" />
+        </div>
+    </section>
+
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <form action="mailto:contacto@sistemasasyr.com" method="post" enctype="text/plain">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required />
+
+            <label for="correo">Correo Electrónico:</label>
+            <input type="email" id="correo" name="correo" required />
+
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Sistemas Asyr. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
