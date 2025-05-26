@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="Sistemas Asyr - Renta y venta de equipos de cómputo, infraestructura TI y más" />
     <title>Sistemas Asyr</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
     <script defer src="script.js"></script>
     <style>
@@ -46,23 +47,42 @@
             margin: 40px auto;
             padding: 0 20px;
         }
-        h1, h2 {
-            color: #004080;
-            margin-bottom: 20px;
-        }
+        
+    h1, h2 {
+    color: #0066ff86; /* Negro puro para elegancia y claridad */
+    margin-bottom: 24px; /* Espacio para buena separación */
+    font-weight: 600; /* Negrita moderada, elegante */
+    font-family: 'Georgia', serif; /* Tipografía serif clásica, elegante */
+    line-height: 1.3; /* Mejor lectura */
+    text-shadow: none; /* Sin sombra para limpieza */
+    letter-spacing: 0.02em; /* Espacio sutil entre letras para estilo */
+}
+
+        /* Sección Inicio con fondo tecnológico y fuente elegante */
         #inicio {
-            background: url('https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1350&q=80') no-repeat center center/cover;
+            background: url('https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1350&q=80') no-repeat center center/cover;
             color: white;
             padding: 100px 20px;
             text-align: center;
             border-radius: 8px;
-            box-shadow: inset 0 0 0 2000px rgba(0, 64, 128, 0.6);
+            box-shadow: inset 0 0 0 2000px rgba(104, 201, 247, 0.7);
+            font-family: 'Poppins', sans-serif;
+        }
+        #inicio h1 {
+            color: #131313;
+            font-weight: 700;
+            font-size: 3rem;
+            text-shadow: 1px 1px 5px rgba(0,0,0,0.7);
+            margin-bottom: 20px;
         }
         #inicio p {
-            font-size: 1.3rem;
+            font-size: 1.4rem;
             max-width: 700px;
-            margin: 20px auto 0;
+            margin: 0 auto;
+            text-shadow: 0 0 5px rgba(0,0,0,0.6);
+            line-height: 1.5;
         }
+
         #servicios ul {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -90,42 +110,70 @@
             max-width: 900px;
             margin: 0 auto;
         }
-        #contacto form {
-            background: white;
-            padding: 30px;
-            border-radius: 8px;
-            box-shadow: 0 4px 15px rgb(0 0 0 / 0.1);
-            max-width: 600px;
-            margin: 0 auto;
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
-        }
-        #contacto label {
-            font-weight: 600;
-            margin-bottom: 5px;
-        }
-        #contacto input, #contacto textarea {
-            padding: 10px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            font-size: 1rem;
-            resize: vertical;
-        }
-        #contacto button {
-            background-color: #004080;
-            color: white;
-            border: none;
-            padding: 12px;
-            border-radius: 6px;
-            font-weight: 700;
-            font-size: 1.1rem;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-        }
-        #contacto button:hover {
-            background-color: #002b5c;
-        }
+       #contacto {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 30px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 64, 128, 0.2);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#contacto h2 {
+    text-align: center;
+    color: #004080;
+    font-weight: 700;
+    font-size: 2.2rem;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+
+#contacto label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #004080;
+    font-size: 1rem;
+}
+
+#contacto input,
+#contacto textarea {
+    width: 100%;
+    padding: 14px 16px;
+    margin-bottom: 20px;
+    border: 2px solid #004080;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-family: inherit;
+    transition: border-color 0.3s ease;
+}
+
+#contacto input:focus,
+#contacto textarea:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.4);
+}
+
+#contacto button {
+    width: 100%;
+    padding: 16px;
+    background-color: #004080;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 700;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    letter-spacing: 1px;
+}
+
+#contacto button:hover {
+    background-color: #002b5c;
+}
+
         footer {
             text-align: center;
             padding: 15px 10px;
@@ -181,7 +229,7 @@
             </li>
             <li>
                 <img src="https://img.icons8.com/ios-filled/50/004080/server.png" alt="Infraestructura TI" />
-                Infraestructura TI: cámaras, nodos de red, servidores, site, switches, access points, antenas de red
+                Infraestructura TI 
             </li>
             <li>
                 <img src="https://img.icons8.com/ios-filled/50/004080/code.png" alt="Páginas web" />
@@ -213,21 +261,21 @@
         </div>
     </section>
 
-    <section id="contacto">
-        <h2>Contacto</h2>
-        <form action="mailto:contacto@sistemasasyr.com" method="post" enctype="text/plain">
-            <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" name="nombre" required />
+   <section id="contacto">
+    <h2>Contáctanos</h2>
+    <form action="mailto:contacto@sistemasasir.com" method="post" enctype="text/plain" novalidate>
+        <label for="nombre">Nombre completo:</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Tu nombre completo" required />
 
-            <label for="correo">Correo Electrónico:</label>
-            <input type="email" id="correo" name="correo" required />
+        <label for="correo">Correo electrónico:</label>
+        <input type="email" id="correo" name="correo" placeholder="ejemplo@correo.com" required />
 
-            <label for="mensaje">Mensaje:</label>
-            <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" rows="6" placeholder="Escribe aquí tu mensaje..." required></textarea>
 
-            <button type="submit">Enviar</button>
-        </form>
-    </section>
+        <button type="submit">Enviar</button>
+    </form>
+</section>
 
     <footer>
         <p>&copy; 2025 Sistemas Asyr. Todos los derechos reservados.</p>
