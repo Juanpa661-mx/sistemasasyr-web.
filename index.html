@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="Sistemas Asyr - Renta y venta de equipos de cómputo, infraestructura TI y más" />
     <title>Sistemas Asyr</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
     <script defer src="script.js"></script>
     <style>
@@ -42,22 +42,43 @@
         nav ul li a:hover {
             color: #ffc107;
         }
+        nav ul li .btn-blog {
+            background-color: #2b80ff; /*color llamativo */
+            color: #004080 !important;
+            padding: 8px 18px;
+            border-radius: 20px;
+            font-weight: 700;
+            transition: background-color 0.3s ease;
+        }
+        nav ul li .btn-blog:hover {
+            background-color: #e6b800;
+            color: #002b5c !important;
+        }
         section {
             max-width: 1200px;
             margin: 40px auto;
             padding: 0 20px;
         }
         
-    h1, h2 {
-    color: #0066ff86; /* Negro puro para elegancia y claridad */
-    margin-bottom: 24px; /* Espacio para buena separación */
-    font-weight: 600; /* Negrita moderada, elegante */
-    font-family: 'Georgia', serif; /* Tipografía serif clásica, elegante */
-    line-height: 1.3; /* Mejor lectura */
-    text-shadow: none; /* Sin sombra para limpieza */
-    letter-spacing: 0.02em; /* Espacio sutil entre letras para estilo */
-}
-
+        /* Títulos con tipografía y estilo tecnológico */
+        h1, h2 {
+            font-family: 'Orbitron', sans-serif;
+            color: #00aaff;
+            margin-bottom: 30px;
+            font-weight: 700;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            position: relative;
+        }
+        h1::after, h2::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 3px;
+            background: #00aaff;
+            margin-top: 8px;
+            border-radius: 2px;
+        }
         /* Sección Inicio con fondo tecnológico y fuente elegante */
         #inicio {
             background: url('https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1350&q=80') no-repeat center center/cover;
@@ -82,7 +103,6 @@
             text-shadow: 0 0 5px rgba(0,0,0,0.6);
             line-height: 1.5;
         }
-
         #servicios ul {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -111,69 +131,62 @@
             margin: 0 auto;
         }
        #contacto {
-    max-width: 600px;
-    margin: 40px auto;
-    padding: 30px;
-    background: white;
-    border-radius: 12px;
-    box-shadow: 0 8px 20px rgba(0, 64, 128, 0.2);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-#contacto h2 {
-    text-align: center;
-    color: #004080;
-    font-weight: 700;
-    font-size: 2.2rem;
-    margin-bottom: 30px;
-    letter-spacing: 1px;
-}
-
-#contacto label {
-    display: block;
-    font-weight: 600;
-    margin-bottom: 8px;
-    color: #004080;
-    font-size: 1rem;
-}
-
-#contacto input,
-#contacto textarea {
-    width: 100%;
-    padding: 14px 16px;
-    margin-bottom: 20px;
-    border: 2px solid #004080;
-    border-radius: 8px;
-    font-size: 1rem;
-    font-family: inherit;
-    transition: border-color 0.3s ease;
-}
-
-#contacto input:focus,
-#contacto textarea:focus {
-    outline: none;
-    border-color: #007bff;
-    box-shadow: 0 0 8px rgba(0, 123, 255, 0.4);
-}
-
-#contacto button {
-    width: 100%;
-    padding: 16px;
-    background-color: #004080;
-    color: white;
-    font-size: 1.2rem;
-    font-weight: 700;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    letter-spacing: 1px;
-}
-
-#contacto button:hover {
-    background-color: #002b5c;
-}
-
+           max-width: 600px;
+           margin: 40px auto;
+           padding: 30px;
+           background: white;
+           border-radius: 12px;
+           box-shadow: 0 8px 20px rgba(0, 64, 128, 0.2);
+           font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+       }
+       #contacto h2 {
+           text-align: center;
+           color: #004080;
+           font-weight: 700;
+           font-size: 2.2rem;
+           margin-bottom: 30px;
+           letter-spacing: 1px;
+       }
+       #contacto label {
+           display: block;
+           font-weight: 600;
+           margin-bottom: 8px;
+           color: #004080;
+           font-size: 1rem;
+       }
+       #contacto input,
+       #contacto textarea {
+           width: 100%;
+           padding: 14px 16px;
+           margin-bottom: 20px;
+           border: 2px solid #004080;
+           border-radius: 8px;
+           font-size: 1rem;
+           font-family: inherit;
+           transition: border-color 0.3s ease;
+       }
+       #contacto input:focus,
+       #contacto textarea:focus {
+           outline: none;
+           border-color: #007bff;
+           box-shadow: 0 0 8px rgba(0, 123, 255, 0.4);
+       }
+       #contacto button {
+           width: 100%;
+           padding: 16px;
+           background-color: #004080;
+           color: white;
+           font-size: 1.2rem;
+           font-weight: 700;
+           border: none;
+           border-radius: 10px;
+           cursor: pointer;
+           transition: background-color 0.3s ease;
+           letter-spacing: 1px;
+       }
+       #contacto button:hover {
+           background-color: #002b5c;
+       }
         footer {
             text-align: center;
             padding: 15px 10px;
@@ -199,13 +212,15 @@
 <body>
     <header>
         <nav>
-            <ul>
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#servicios">Servicios</a></li>
-                <li><a href="#nosotros">Sobre Nosotros</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
+           <ul>
+           <li><a href="/">Inicio</a></li>
+           <li><a href="/servicios">Servicios</a></li>
+           <li><a href="/nosotros">Sobre Nosotros</a></li>
+           <li><a href="/contacto">Contacto</a></li>
+           <li><a href="/blog" class="btn-blog">Blog</a></li>
+          </ul>
         </nav>
+
     </header>
 
     <section id="inicio">
