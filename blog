@@ -112,7 +112,7 @@
     <a href="/blog" style="font-weight: 700; color:#00aaff;">Blog</a>
   </nav>
 
-  <h1>Blog - Datos Curiosos sobre Sistemas</h1>
+  <h1>Blog - ¿Qué tanto sabes?</h1>
 
   <article>
     <h3>¿Por qué los sistemas informáticos son esenciales hoy?</h3>
@@ -143,7 +143,8 @@
     <div class="fact-box">
       <strong>Sabías qué:</strong> Cada 39 segundos ocurre un nuevo ataque cibernético en algún lugar del mundo.
     </div>
-    <img class="article-img" src="https://images.unsplash.com/photo-1555949963-4b6c4f3c55a3?auto=format&fit=crop&w=800&q=80" alt="Ciberseguridad" />
+    <img class="article-img" src="https://elements-resized.envatousercontent.com/envato-dam-assets-production/EVA/TRX/bd/73/2c/a4/a0/v1_E11/E114JOD8.jpg?w=800&cf_fit=scale-down&mark-alpha=18&mark=https%3A%2F%2Felements-assets.envato.com%2Fstatic%2Fwatermark4.png&q=85&format=auto&s=547165d91e9026daeea8fe412706be2dcd636ff284fc24ec340bc1b67230e831" alt="Ciberseguridad" />
+
   </article>
 
   <article>
