@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function() {
     
     menuItems.forEach(item => {
         item.addEventListener("click", () => {
-            alert("¡Bienvenido a JLA Sistemas!");
+            alert("¡Bienvenido a Sistemas Asyr!");
         });
     });
 });
