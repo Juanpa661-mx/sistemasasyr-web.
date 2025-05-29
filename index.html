@@ -196,15 +196,89 @@
             margin-top: 60px;
         }
         /* Responsive */
+        @media(max-width: 900px) {
+            body {
+                padding: 0 15px;
+            }
+            nav ul {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 15px;
+            }
+            nav ul li {
+                margin: 8px 10px;
+            }
+            section {
+                margin: 30px auto;
+                padding: 0 15px;
+            }
+            #inicio {
+                padding: 80px 15px;
+            }
+            #inicio h1 {
+                font-size: 2.5rem;
+            }
+            #inicio p {
+                font-size: 1.2rem;
+            }
+            #servicios ul {
+                grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+                gap: 20px;
+            }
+            #servicios li {
+                padding: 15px;
+                font-size: 0.95rem;
+            }
+            #contacto {
+                padding: 25px 20px;
+            }
+            #contacto h2 {
+                font-size: 1.9rem;
+            }
+            #contacto button {
+                font-size: 1.1rem;
+                padding: 14px;
+            }
+        }
         @media(max-width: 600px) {
             nav ul {
                 flex-direction: column;
+                align-items: center;
+                gap: 10px;
             }
             nav ul li {
-                margin: 10px 0;
+                margin: 6px 0;
+            }
+            #inicio {
+                padding: 60px 10px;
+            }
+            #inicio h1 {
+                font-size: 2rem;
+            }
+            #inicio p {
+                font-size: 1rem;
             }
             #servicios ul {
                 grid-template-columns: 1fr;
+                gap: 15px;
+            }
+            #servicios li {
+                font-size: 0.9rem;
+                padding: 12px;
+            }
+            #contacto {
+                padding: 20px 15px;
+            }
+            #contacto h2 {
+                font-size: 1.6rem;
+            }
+            #contacto button {
+                font-size: 1rem;
+                padding: 12px;
+            }
+            footer {
+                font-size: 0.85rem;
+                padding: 12px 5px;
             }
         }
     </style>
@@ -276,21 +350,20 @@
     </section>
 
    <section id="contacto">
-    <h2>Contáctanos</h2>
-    <form action="mailto:contacto@sistemasasyr.com" method="post" enctype="text/plain" novalidate>
-        <label for="nombre">Nombre completo:</label>
-        <input type="text" id="nombre" name="nombre" placeholder="Tu nombre completo" required />
+  <h2>Contáctanos</h2>
+  <form action="https://formspree.io/f/xkgrdylw" method="POST" novalidate>
+    <label for="nombre">Nombre completo:</label>
+    <input type="text" id="nombre" name="nombre" placeholder="Tu nombre completo" required />
 
-        <label for="correo">Correo electrónico:</label>
-        <input type="email" id="correo" name="correo" placeholder="ejemplo@correo.com" required />
+    <label for="correo">Correo electrónico:</label>
+    <input type="email" id="correo" name="correo" placeholder="ejemplo@correo.com" required />
 
-        <label for="mensaje">Mensaje:</label>
-        <textarea id="mensaje" name="mensaje" rows="6" placeholder="Escribe aquí tu mensaje..." required></textarea>
+    <label for="mensaje">Mensaje:</label>
+    <textarea id="mensaje" name="mensaje" rows="6" placeholder="Escribe aquí tu mensaje..." required></textarea>
 
-        <button type="submit">Enviar</button>
-    </form>
+    <button type="submit">Enviar</button>
+  </form>
 </section>
-
     <footer>
         <p>&copy; 2025 Sistemas Asyr. Todos los derechos reservados.</p>
     </footer>
