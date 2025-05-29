@@ -9,6 +9,39 @@
     <link rel="stylesheet" href="style.css" />
     <script defer src="script.js"></script>
     <style>
+         /* Botones flotantes redes sociales */
+  .social-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    z-index: 1000;
+  }
+  .social-float a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    background-color: #004080;
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(0, 64, 128, 0.3);
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+    transition: background-color 0.3s ease;
+  }
+  .social-float a:hover {
+    background-color: #002b5c;
+  }
+  /* Iconos SVG internos */
+       .social-icon {
+       width: 24px;
+       height: 24px;
+       fill: white;
+       }
         /* Estilos básicos para mejorar presentación */
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -364,6 +397,34 @@
     <button type="submit">Enviar</button>
   </form>
 </section>
+
+<div class="social-float" aria-label="Redes sociales">
+  <a href="#" target="_blank" aria-label="WhatsApp" id="whatsapp-link" rel="noopener noreferrer" title="WhatsApp">
+    <svg class="social-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+      <path d="M20.52 3.48A11.89 11.89 0 0012 0a11.88 11.88 0 00-10.63 6.11 11.64 11.64 0 001.52 13.21l-1.59 4.65 4.75-1.57a11.9 11.9 0 005.75 1.5h.01a11.89 11.89 0 008.97-19.42zm-8.47 17.13a9.75 9.75 0 01-5.13-1.43l-.37-.23-3.2 1.06 1.07-3.11-.24-.38a9.79 9.79 0 0116.92-10.75 9.64 9.64 0 01-6.25 16.83zm5.64-7.33c-.3-.15-1.78-.88-2.05-.98-.27-.1-.46-.15-.65.15s-.75.98-.92 1.18c-.17.2-.35.22-.65.07a7.54 7.54 0 01-2.21-1.36 8.39 8.39 0 01-1.56-1.93c-.17-.3 0-.46.13-.61.14-.15.3-.38.45-.57.15-.19.2-.32.3-.53.1-.2 0-.38-.02-.53-.03-.15-.65-1.56-.9-2.14-.24-.56-.48-.5-.65-.51-.17 0-.37 0-.57 0a1.42 1.42 0 00-1.03.48 4.33 4.33 0 00-1.64 3.93 8.02 8.02 0 005.44 5.15 4.64 4.64 0 002.08.37 3.41 3.41 0 002.5-1.23 4.41 4.41 0 001.27-2.43c.03-.12.03-.23.02-.32-.02-.1-.07-.15-.3-.3z"/>
+    </svg>
+  </a>
+  <a href="#" target="_blank" aria-label="Facebook" rel="noopener noreferrer" title="Facebook">
+    <svg class="social-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+      <path d="M22.675 0H1.325C.593 0 0 .593 0 1.325v21.351C0 23.407.593 24 1.325 24H12.82v-9.294H9.692v-3.622h3.128V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.312h3.587l-.467 3.622h-3.12V24h6.116c.73 0 1.324-.593 1.324-1.324V1.325c0-.732-.594-1.325-1.325-1.325z"/>
+    </svg>
+  </a>
+  <a href="#" target="_blank" aria-label="LinkedIn" rel="noopener noreferrer" title="LinkedIn">
+    <svg class="social-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+      <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.85-3.037-1.853 0-2.136 1.445-2.136 2.94v5.666H9.353V9h3.414v1.561h.049c.476-.9 1.637-1.85 3.37-1.85 3.602 0 4.268 2.37 4.268 5.455v6.286zM5.337 7.433a2.06 2.06 0 11.001-4.12 2.06 2.06 0 010 4.12zm1.777 13.019H3.56V9h3.554v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.728v20.543C0 23.223.792 24 1.771 24h20.451C23.2 24 24 23.223 24 22.271V1.728C24 .774 23.2 0 22.225 0z"/>
+    </svg>
+  </a>
+</div>
+<script>
+  // Puedes modificar el número de WhatsApp aquí cuando lo tengas
+  const whatsappNumber = '+525541458539'; // Ejemplo: '5215512345678' (52 + lada + número)
+  const whatsappLink = document.getElementById('whatsapp-link');
+  if (whatsappNumber) {
+    whatsappLink.href = `https://wa.me/${whatsappNumber}`;
+  } else {
+    whatsappLink.href = '#'; // o no mostrar el enlace si quieres
+  }
+</script>
     <footer>
         <p>&copy; 2025 Sistemas Asyr. Todos los derechos reservados.</p>
     </footer>
